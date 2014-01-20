@@ -178,7 +178,7 @@
     <para style="terp_default_8">
       <font color="white"> </font>
      </para>
-     <para style="terp_default_Left_9_Bold"><b>[[subject()o.</b></para>
+  <para style="terp_default_10" alignment = "center"><b>Quotation Subject: </b>[[o.sale_subject]]</para>
     <para style="terp_default_8">
       <font color="white"> </font>
     </para>
@@ -204,7 +204,7 @@
         <td>
           <para style="terp_default_Centre_8">[[ o.client_order_ref ]]</para>
         </td>
-        <td>bikram basnet
+        <td>
           <para style="terp_default_Centre_8">[[ formatLang(o.date_order,date = True) ]]</para>
         </td>
         <td>

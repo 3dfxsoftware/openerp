@@ -18,7 +18,6 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
 import time
 
 from openerp.report import report_sxw
@@ -32,12 +31,8 @@ class order(report_sxw.rml_parse):
             'show_discount':self._show_discount,
             'card':self.card,
             'new':self.new,
-            'has_line_discount':self._has_line_discount,
         })
     
-    def _has_line_discount(self, order):
-        return any([l.discount for l in order.order_line])
-
     def _show_discount(self, uid, context=None):
         cr = self.cr
         try: 
